@@ -5,7 +5,7 @@ import styles from './Projects.module.css'
 
 export default function Projects() {
   return (
-    <section id="projets" className={`${styles.projects} section-padding`} style={{ scrollMarginTop: '64px' }}>
+    <section id="projets" className={`${styles.projects} section-padding`}>
       <div className="container">
         <SectionTitle>Projets</SectionTitle>
         <p className="section-subtitle">Ce que je construis</p>

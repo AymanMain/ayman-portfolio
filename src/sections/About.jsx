@@ -11,7 +11,7 @@ const FACTS = [
 
 export default function About() {
   return (
-    <section id="about" className={`${styles.about} section-padding`} style={{ scrollMarginTop: '64px' }}>
+    <section id="about" className={`${styles.about} section-padding`}>
       <div className="container">
         <SectionTitle><span>À</span> propos</SectionTitle>
         <p className="section-subtitle">Qui suis-je ?</p>

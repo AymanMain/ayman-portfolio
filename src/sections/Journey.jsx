@@ -67,7 +67,7 @@ export default function Journey() {
   }, [])
 
   return (
-    <section id="parcours" className={`${styles.journey} section-padding`} style={{ scrollMarginTop: '64px' }}>
+    <section id="parcours" className={`${styles.journey} section-padding`}>
       <div className="container">
         <SectionTitle>Parcours</SectionTitle>
         <p className="section-subtitle">Formation, expériences et objectifs</p>

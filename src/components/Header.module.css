@@ -30,6 +30,12 @@
   letter-spacing: -0.5px;
 }
 
+.logo:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
 .logoAccent {
   color: var(--color-accent);
 }
@@ -45,11 +51,29 @@
   font-weight: 500;
   color: var(--color-text-muted);
   transition: color 0.2s;
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-accent);
+  border-radius: 1px;
+  transform: scaleX(0);
+  transition: transform 0.2s;
 }
 
 .navLink:hover,
-.navLink:focus-visible {
-  color: var(--color-accent-cyan);
+.navLinkActive {
+  color: var(--color-text);
+}
+
+.navLinkActive::after {
+  transform: scaleX(1);
 }
 
 .navLink:focus-visible {
@@ -68,6 +92,12 @@
   cursor: pointer;
 }
 
+.hamburger:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
 .bar {
   display: block;
   width: 22px;
@@ -75,6 +105,19 @@
   background: var(--color-text);
   border-radius: 2px;
   transition: transform 0.3s, opacity 0.3s;
+  transform-origin: center;
+}
+
+.barTop {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.barMid {
+  opacity: 0;
+}
+
+.barBot {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -107,5 +150,9 @@
     padding: 0.75rem 1.5rem;
     width: 100%;
     font-size: 1rem;
+  }
+
+  .navLink::after {
+    display: none;
   }
 }

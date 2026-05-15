@@ -47,7 +47,7 @@ const CARDS = [
 
 export default function Contact() {
   return (
-    <section id="contact" className={`${styles.contact} section-padding`} style={{ scrollMarginTop: '64px' }}>
+    <section id="contact" className={`${styles.contact} section-padding`}>
       <div className="container">
         <SectionTitle>Contact</SectionTitle>
         <p className="section-subtitle">Disponible pour stage et alternance</p>

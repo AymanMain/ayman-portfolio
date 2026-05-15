@@ -13,7 +13,7 @@ const LEVEL_LABEL = {
 
 export default function Skills() {
   return (
-    <section id="competences" className={`${styles.skills} section-padding`} style={{ scrollMarginTop: '64px' }}>
+    <section id="competences" className={`${styles.skills} section-padding`}>
       <div className="container">
         <SectionTitle>Compétences</SectionTitle>
         <p className="section-subtitle">Stack technique et niveaux</p>
