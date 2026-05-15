@@ -14,7 +14,7 @@ const projects = [
       'Containerisation Docker',
       'Frontend React connecté à l\'API',
     ],
-    github: 'https://github.com/AymanMain/mycampo',
+    github: null,
     demo: null,
   },
   {
@@ -22,17 +22,17 @@ const projects = [
     title: 'PhableAI',
     emoji: '🎭',
     description:
-      'Jeu narratif multijoueur intégrant un LLM pour générer des scénarios dynamiques. Backend Spring Boot, intégration API Claude/OpenAI.',
-    stack: ['Java', 'Spring Boot', 'LLM Integration', 'React', 'WebSocket'],
+      'Jeu narratif multijoueur avec génération de scénarios par LLM en temps réel. Un joueur devient le scénariste, les autres jouent — l\'IA génère texte, images et audio dynamiquement. Spring Boot backend, React frontend, intégration Claude/GPT-4 API.',
+    stack: ['Java', 'Spring Boot', 'Claude API', 'GPT-4', 'React', 'WebSocket'],
     status: 'En développement',
     statusType: 'in-progress',
     highlights: [
-      'Intégration LLM (Claude/OpenAI API)',
-      'Gestion de sessions multijoueur',
-      'Génération de contenu dynamique',
-      'Backend REST + WebSocket',
+      'Intégration LLM multimodale : texte, image, voix générés en temps réel',
+      'Architecture multi-rôles : joueurs + scénariste IA dans la même session',
+      'WebSocket pour synchronisation multijoueur en temps réel',
+      'Gestion de contexte narratif inter-sessions',
     ],
-    github: 'https://github.com/AymanMain/phableai',
+    github: null,
     demo: null,
   },
   {

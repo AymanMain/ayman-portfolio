@@ -3,12 +3,9 @@ import skills from '../data/skills'
 import styles from './Skills.module.css'
 
 const LEVEL_LABEL = {
-  avance: 'Avancé',
-  intermediaire: 'Intermédiaire',
-  progression: 'En progression',
-  bases: 'Bases',
-  certification: 'Certification',
-  formation: 'En formation',
+  production: 'Production',
+  personal: 'Projets perso',
+  learning: 'En apprentissage',
 }
 
 export default function Skills() {

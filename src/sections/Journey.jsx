@@ -32,10 +32,11 @@ const ENTRIES = [
     icon: '🏗️',
   },
   {
-    date: '2025',
+    date: 'Mars 2025 — Septembre 2025',
     type: 'work',
-    title: 'Stage — Société Générale Maroc',
-    detail: 'Développement backend Java. Première expérience en entreprise dans un environnement bancaire.',
+    featured: true,
+    title: 'Développeur Backend Java — Société Générale Digital Factory',
+    detail: 'Conception et livraison bout en bout d\'une plateforme de gestion d\'appels d\'offres immobiliers pour piloter la cession de 9 centres d\'affaires, ~300 agences, 15 filiales et +500 GAB vers le groupe Saham. Spring Boot 3, Keycloak multi-instances, CI/CD GitLab/Jenkins, couverture tests >80% SonarQube.',
     icon: '🏦',
   },
   {
@@ -77,12 +78,15 @@ export default function Journey() {
             <div
               key={i}
               ref={(el) => (itemsRef.current[i] = el)}
-              className={`${styles.entry} ${styles[`entry_${entry.type}`]}`}
+              className={`${styles.entry} ${styles[`entry_${entry.type}`]} ${entry.featured ? styles.entryFeatured : ''}`}
             >
               <div className={styles.iconWrap}>
                 <span className={styles.icon}>{entry.icon}</span>
               </div>
               <div className={styles.content}>
+                {entry.featured && (
+                  <span className={styles.featuredTag}>Expérience Entreprise</span>
+                )}
                 <time className={styles.date}>{entry.date}</time>
                 <h3 className={styles.title}>{entry.title}</h3>
                 <p className={styles.detail}>{entry.detail}</p>
